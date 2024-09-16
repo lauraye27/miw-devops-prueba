@@ -57,6 +57,30 @@ public class Fraction {
         return (double) numerator / denominator;
     }
 
+    public boolean isProper() {
+        return false;
+    }
+
+    public boolean isImproper() {
+        return false;
+    }
+
+    public boolean isEquivalent() {
+        return false;
+    }
+
+    public double add() {
+        return 0;
+    }
+
+    public double multiply() {
+        return 0;
+    }
+
+    public double divide() {
+        return 0;
+    }
+
     @Override
     public String toString() {
         return "Fraction{" +
