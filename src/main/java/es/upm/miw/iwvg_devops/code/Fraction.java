@@ -58,18 +58,22 @@ public class Fraction {
     }
 
     public boolean isProper() {
-        return false;
+        if (this.denominator == 0) {
+            return false;
+        }
+        return Math.abs(this.numerator) < Math.abs(this.denominator);
     }
 
     public boolean isImproper() {
-        return false;
+        return !isProper();
     }
 
-    public boolean isEquivalent() {
-        return false;
+    public boolean isEquivalent(Fraction fraction2) {
+        return (this.numerator * fraction2.getDenominator()) == (this.denominator * fraction2.getNumerator());
     }
 
-    public double add() {
+    public double add(Fraction fraction2) {
+
         return 0;
     }
 
